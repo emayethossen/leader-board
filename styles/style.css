@@ -12,6 +12,51 @@ body {
     background: #E5E5E5;
 }
 
+header {
+    background: #7757FF;
+
+}
+
+/* Navbar Styles */
+.navbar h1 img {
+    width: 60px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 230px;
+    margin-bottom: 70px;
+}
+
+.nav-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 50px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav li a:hover {
+    color: hotpink;
+    font-weight: bold;
+}
+
 /* Blog Section Styles */
 main {
     display: flex;
@@ -164,6 +209,32 @@ span {
 
 /* Responsive Design */
 @media only screen and (max-width: 576px) {
+    header {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-title {
+        font-weight: 700;
+        font-size: 45px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    nav li {
+        margin: 20px;
+    }
+
     .players {
         grid-template-columns: repeat(1, 1fr);
 
